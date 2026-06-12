@@ -91,7 +91,7 @@ h3 { font-size: 1.6rem; }
 .counsellor-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 80px; align-items: center; }
 .profile-panel { padding: 45px; border: 1px solid rgba(255,255,255,.15); border-radius: var(--radius); background: rgba(255,255,255,.06); }
 .profile-initials { display: grid; width: 130px; height: 130px; margin-bottom: 45px; border-radius: 50%; place-items: center; color: var(--berry-dark); background: #f2d6e7; font: 700 2.5rem Georgia, serif; }
-.profile-img { display: block; width: 200px; height: 200px; margin: 0 auto 35px; border-radius: 24px; object-fit: cover; border: 2px solid rgba(255,255,255,.15); }
+.profile-img { display: block; width: 200px; height: 200px; margin: 0 0 35px; border-radius: 24px; object-fit: cover; border: 2px solid rgba(255,255,255,.15); }
 .profile-panel .eyebrow, .profile-copy .eyebrow { color: #e5a8cc; }
 .profile-panel h2 { margin-bottom: 15px; font-size: 3rem; }
 .credential { color: #ead4e3; font-weight: 700; }
