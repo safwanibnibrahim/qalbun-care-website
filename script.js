@@ -12,7 +12,8 @@ const closeMenu = () => {
   navToggle.setAttribute("aria-expanded", "false");
 };
 
-navToggle.addEventListener("click", () => {
+navToggle.addEventListener("click", (e) => {
+  e.stopPropagation();
   const isOpen = navToggle.getAttribute("aria-expanded") === "true";
   document.body.classList.toggle("nav-open", !isOpen);
   nav.classList.toggle("open", !isOpen);
@@ -20,6 +21,13 @@ navToggle.addEventListener("click", () => {
 });
 
 nav.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
+
+// Close menu when clicking outside
+document.addEventListener("click", (e) => {
+  if (nav.classList.contains("open") && !nav.contains(e.target) && !navToggle.contains(e.target)) {
+    closeMenu();
+  }
+});
 
 window.addEventListener("scroll", () => {
   header.classList.toggle("scrolled", window.scrollY > 20);
