@@ -52,7 +52,7 @@ h3 { font-size: 1.6rem; }
 .button-light { color: var(--berry-dark); background: white; border-color: white; }
 
 .hero { position: relative; min-height: 820px; padding: 170px 0 100px; overflow: hidden; background: linear-gradient(145deg, #fdf9f7 20%, #f4e4ef); }
-.hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1.35fr .65fr; gap: 70px; align-items: center; }
+.hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1.1fr .9fr; gap: 60px; align-items: center; }
 .hero-copy h1 { margin-bottom: 28px; }
 .hero-text { max-width: 680px; color: var(--muted); font-size: 1.13rem; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 34px 0; }
@@ -139,7 +139,7 @@ blockquote { margin: 34px 0 0; padding-left: 25px; border-left: 2px solid #e5a8c
   .section { padding: 80px 0; }
   .hero { min-height: auto; padding-top: 140px; }
   .hero-grid, .counsellor-grid, .cta-inner { grid-template-columns: 1fr; }
-  .hero-image-wrap { max-width: 460px; width: 100%; margin: 0 auto; }
+  .hero-image-wrap { max-width: 540px; width: 100%; margin: 0 auto; }
   .card-grid.three { grid-template-columns: 1fr; }
   .counsellor-grid { gap: 35px; }
   .nav-toggle { display: block; }
