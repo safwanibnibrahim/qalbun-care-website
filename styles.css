@@ -76,8 +76,8 @@ h3 { font-size: 1.6rem; }
 .card-grid.two { grid-template-columns: repeat(2, 1fr); }
 .value-card, .service-card { padding: 36px; border: 1px solid var(--line); border-radius: var(--radius); background: rgba(255,255,255,.62); transition: .25s; }
 .value-card:hover, .service-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
-.value-card .icon { display: block; width: 52px; height: 52px; margin-bottom: 48px; color: var(--berry); background: transparent; }
-.value-card .icon svg { width: 100%; height: 100%; }
+.value-card .icon { display: block; width: 52px; height: 52px; margin-bottom: 48px; background: transparent; }
+.value-card .icon img { width: 100%; height: 100%; object-fit: contain; }
 .value-card p, .service-card p { margin-bottom: 0; color: var(--muted); }
 .services { background: white; }
 .service-card { min-height: 310px; display: flex; flex-direction: column; }
