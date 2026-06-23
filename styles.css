@@ -150,6 +150,9 @@ h3 { font-size: 1.6rem; }
   gap: 80px;
   align-items: center;
 }
+.philosophy-copy .eyebrow {
+  color: var(--berry);
+}
 .philosophy-copy p {
   color: var(--muted);
   font-size: 1.05rem;
