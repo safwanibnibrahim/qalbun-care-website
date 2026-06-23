@@ -140,6 +140,61 @@ blockquote { margin: 34px 0 0; padding-left: 25px; border-left: 2px solid #e5a8c
 .reveal.visible { opacity: 1; transform: none; }
 :focus-visible { outline: 3px solid #d586b5; outline-offset: 4px; }
 
+/* Philosophy Section */
+.philosophy {
+  background: var(--white);
+}
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 80px;
+  align-items: center;
+}
+.philosophy-copy p {
+  color: var(--muted);
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+}
+.philosophy-copy p:last-child {
+  margin-bottom: 0;
+}
+.philosophy-quote-card {
+  position: relative;
+  padding: 45px 40px;
+  border-radius: var(--radius);
+  background: var(--berry-light);
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+.philosophy-quote-card blockquote {
+  margin: 0;
+  padding-left: 0;
+  border-left: 0;
+  color: var(--berry-dark);
+  font: italic 400 1.45rem/1.5 Georgia, serif;
+}
+.philosophy-quote-card cite {
+  display: block;
+  margin-top: 15px;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--rose);
+}
+.quote-icon {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  font-size: 8rem;
+  font-family: Georgia, serif;
+  color: rgba(143, 18, 107, 0.06);
+  line-height: 1;
+  pointer-events: none;
+}
+
 @media (max-width: 900px) {
   .section { padding: 80px 0; }
   .hero { min-height: auto; padding-top: 140px; }
@@ -180,6 +235,7 @@ blockquote { margin: 34px 0 0; padding-left: 25px; border-left: 2px solid #e5a8c
   .nav-open .nav-toggle span:nth-child(2) { transform: translateY(7px) rotate(45deg); }
   .nav-open .nav-toggle span:nth-child(3) { opacity: 0; }
   .nav-open .nav-toggle span:nth-child(4) { transform: translateY(-7px) rotate(-45deg); }
+  .philosophy-grid { grid-template-columns: 1fr; gap: 40px; }
 }
 
 @media (max-width: 650px) {
@@ -201,6 +257,8 @@ blockquote { margin: 34px 0 0; padding-left: 25px; border-left: 2px solid #e5a8c
   .steps span { width: 44px; height: 44px; }
   .cta-inner { padding: 38px 26px; }
   .footer-bottom { flex-direction: column; }
+  .philosophy-quote-card { padding: 35px 25px; }
+  .philosophy-quote-card blockquote { font-size: 1.25rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
