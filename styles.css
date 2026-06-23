@@ -105,7 +105,7 @@ h3 { font-size: 1.6rem; }
 .profile-facts li::before { content: "•"; margin-right: 9px; color: #e5a8cc; }
 .profile-copy h2 { margin-bottom: 30px; }
 .profile-copy > p:not(.eyebrow) { color: #dbcbd6; }
-blockquote { margin: 34px 0 0; padding-left: 25px; border-left: 2px solid #e5a8cc; color: white; font: 400 1.35rem/1.6 Georgia, serif; }
+.counsellor blockquote { margin: 34px 0 0; padding-left: 25px; border-left: 2px solid #e5a8cc; color: white; font: 400 1.35rem/1.6 Georgia, serif; }
 .profile-cta { margin-top: 30px; }
 
 .process { background: #f4e7ef; }
