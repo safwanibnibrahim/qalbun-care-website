@@ -153,7 +153,7 @@ h3 { font-size: 1.6rem; }
 .philosophy-copy .eyebrow {
   color: var(--berry);
 }
-.philosophy-copy p {
+.philosophy-copy p:not(.eyebrow) {
   color: var(--muted);
   font-size: 1.05rem;
   margin-bottom: 20px;
