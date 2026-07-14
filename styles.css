@@ -268,3 +268,49 @@ h3 { font-size: 1.6rem; }
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
   .reveal { opacity: 1; transform: none; }
 }
+/* Register page */
+.register-hero {
+  min-height: auto;
+  padding-bottom: 90px;
+}
+.register-shell {
+  position: relative;
+  z-index: 1;
+  max-width: 860px;
+}
+.register-shell h1 {
+  margin-bottom: 28px;
+}
+.register-section {
+  background: white;
+}
+.form-panel {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: white;
+  box-shadow: var(--shadow);
+}
+.form-panel iframe {
+  display: block;
+  width: 100%;
+  min-height: 1450px;
+  border: 0;
+  background: white;
+}
+.register-actions {
+  margin-top: 28px;
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  .register-hero {
+    padding-bottom: 65px;
+  }
+  .form-panel {
+    border-radius: 18px;
+  }
+  .form-panel iframe {
+    min-height: 1600px;
+  }
+}
