@@ -414,6 +414,14 @@ h3 { font-size: 1.6rem; }
   margin: 24px 0 0;
   font-weight: 700;
 }
+.shared-note {
+  margin-top: 22px;
+  padding: 18px 22px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--berry-light);
+  text-align: center;
+}
 .info-card p:last-child {
   margin-bottom: 0;
 }
