@@ -314,3 +314,35 @@ h3 { font-size: 1.6rem; }
     min-height: 1600px;
   }
 }
+/* Footer social links */
+.footer-social {
+  display: flex;
+  align-items: center;
+}
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #bfaeba;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color .2s, transform .2s;
+}
+.social-link svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+}
+.social-link:hover,
+.social-link:focus-visible {
+  color: white;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 650px) {
+  .footer-social {
+    order: 2;
+  }
+}
