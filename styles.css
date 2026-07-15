@@ -414,13 +414,18 @@ h3 { font-size: 1.6rem; }
   margin: 24px 0 0;
   font-weight: 700;
 }
-.shared-note {
-  margin-top: 22px;
-  padding: 18px 22px;
-  border: 1px solid var(--line);
-  border-radius: 18px;
+.package-card {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: .35fr .65fr;
+  gap: 18px 34px;
+  align-items: center;
   background: var(--berry-light);
-  text-align: center;
+}
+.package-card .rate-label,
+.package-card h3,
+.package-card p {
+  margin: 0;
 }
 .info-card p:last-child {
   margin-bottom: 0;
