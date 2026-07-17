@@ -1,4 +1,4 @@
-/* Qalbun Care: lightweight, responsive, and framework-free */
+﻿/* Qalbun Care: lightweight, responsive, and framework-free */
 :root {
   --berry: #8f126b;
   --berry-dark: #541044;
@@ -57,7 +57,7 @@ h3 { font-size: 1.6rem; }
 .hero-text { max-width: 680px; color: var(--muted); font-size: 1.13rem; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 34px 0; }
 .trust-list { display: flex; flex-wrap: wrap; gap: 12px 24px; padding: 0; list-style: none; color: var(--muted); font-size: .84rem; font-weight: 700; }
-.trust-list li::before { content: "✓"; margin-right: 7px; color: var(--berry); }
+.trust-list li::before { content: "âœ“"; margin-right: 7px; color: var(--berry); }
 .hero-image-wrap { position: relative; border-radius: 180px 180px var(--radius) var(--radius); overflow: hidden; box-shadow: var(--shadow); aspect-ratio: 11 / 13; display: flex; flex-direction: column; justify-content: flex-end; }
 .hero-img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
 .hero-image-wrap:hover .hero-img { transform: scale(1.05); }
@@ -102,7 +102,7 @@ h3 { font-size: 1.6rem; }
 .credential span { font-size: .78rem; letter-spacing: .08em; }
 .profile-facts { margin: 30px 0 0; padding: 25px 0 0; border-top: 1px solid rgba(255,255,255,.14); list-style: none; }
 .profile-facts li { margin: 9px 0; color: #dbc6d5; font-size: .88rem; }
-.profile-facts li::before { content: "•"; margin-right: 9px; color: #e5a8cc; }
+.profile-facts li::before { content: "â€¢"; margin-right: 9px; color: #e5a8cc; }
 .profile-copy h2 { margin-bottom: 30px; }
 .profile-copy > p:not(.eyebrow) { color: #dbcbd6; }
 .counsellor blockquote { margin: 34px 0 0; padding-left: 25px; border-left: 2px solid #e5a8cc; color: white; font: 400 1.35rem/1.6 Georgia, serif; }
@@ -480,5 +480,62 @@ h3 { font-size: 1.6rem; }
   .rate-list li {
     display: grid;
     gap: 6px;
+  }
+}
+/* Mobile registration layout polish */
+@media (max-width: 900px) {
+  .register-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .register-shell {
+    max-width: none;
+  }
+
+  .register-hero-image-wrap {
+    display: block;
+    width: min(100%, 520px);
+    margin: 4px auto 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .register-hero {
+    padding-bottom: 58px;
+  }
+
+  .register-hero-grid {
+    gap: 28px;
+  }
+
+  .register-hero-image-wrap {
+    width: 100%;
+    max-width: 380px;
+    border-radius: 90px 90px 22px 22px;
+  }
+
+  .register-hero-img {
+    min-height: 300px;
+  }
+
+  .package-card {
+    display: block;
+  }
+
+  .package-card .rate-label {
+    margin-bottom: 10px;
+  }
+
+  .package-card h3 {
+    margin-bottom: 12px;
+  }
+
+  .pricing-actions {
+    margin-top: 24px;
+  }
+
+  .pricing-actions .button {
+    width: 100%;
   }
 }
