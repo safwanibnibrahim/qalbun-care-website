@@ -298,6 +298,10 @@ h3 { font-size: 1.6rem; }
   border: 0;
   background: white;
 }
+.pricing-actions {
+  margin-top: 28px;
+  text-align: center;
+}
 .register-actions {
   margin-top: 28px;
   text-align: center;
