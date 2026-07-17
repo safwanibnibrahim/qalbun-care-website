@@ -114,7 +114,7 @@ h3 { font-size: 1.6rem; }
 .credential span { font-size: .78rem; letter-spacing: .08em; }
 .profile-facts { margin: 30px 0 0; padding: 25px 0 0; border-top: 1px solid rgba(255,255,255,.14); list-style: none; }
 .profile-facts li { margin: 9px 0; color: #dbc6d5; font-size: .88rem; }
-.profile-facts li::before { content: "â€¢"; margin-right: 9px; color: #e5a8cc; }
+.profile-facts li::before { content: "\\2022"; margin-right: 9px; color: #e5a8cc; }
 .profile-copy h2 { margin-bottom: 30px; }
 .profile-copy > p:not(.eyebrow) { color: #dbcbd6; }
 .counsellor blockquote { margin: 34px 0 0; padding-left: 25px; border-left: 2px solid #e5a8cc; color: white; font: 400 1.35rem/1.6 Georgia, serif; }
@@ -567,3 +567,4 @@ h3 { font-size: 1.6rem; }
     margin-top: 9px;
   }
 }
+
