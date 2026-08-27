@@ -423,6 +423,15 @@ h3 { font-size: 1.6rem; }
 .info-card h3 {
   margin-bottom: 18px;
 }
+.rate-card h3 + .rate-duration {
+  margin-top: -8px;
+}
+.rate-duration {
+  margin-bottom: 20px;
+  color: var(--rose);
+  font-size: .9rem;
+  font-weight: 800;
+}
 .rate-label {
   margin-bottom: 12px;
   color: var(--berry);
@@ -478,6 +487,7 @@ h3 { font-size: 1.6rem; }
   margin: 24px 0 0;
   font-weight: 700;
 }
+.add-on-card,
 .package-card {
   grid-column: 1 / -1;
   display: grid;
